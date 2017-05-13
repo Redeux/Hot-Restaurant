@@ -6,7 +6,12 @@ var tablesArray = require("./../data/tables.json");
 module.exports = function(app) {
 
     app.get("/api/tables", function(req, res) {
-        res.json(tablesArray);
+        var tables = [];
+        for (var i = 0; i < 5; i++) {
+            tables.push(tablesArray[i]);
+        }
+        console.log(tables);
+        res.json(tables);
     });
 
 
