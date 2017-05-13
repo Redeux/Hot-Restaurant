@@ -39,8 +39,5 @@ module.exports = function(app) {
         // We then display the JSON to the users
         res.json(newTable);
     });
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 }
