@@ -14,11 +14,11 @@ function getTables(callBack) {
   });
 }
 
-function getWaitList(callback) {
+function getTables(callback) {
 
   $.ajax({
     method: "GET",
-    url: "/api/waitlist",
+    url: "/api/tables",
     dataType: "json"
   })
   .done(function(data) {
@@ -33,7 +33,7 @@ function postTables(postData,callback) {
 
   $.ajax({
     method: "POST",
-    url: "/api/waitlist",
+    url: "/api/tables",
     data: postData,
     dataType: "json"
   })
@@ -45,7 +45,7 @@ function postTables(postData,callback) {
   });
 }
 
-function getTables(callback) {
+function getWaitlist(callback) {
 
   $.ajax({
     method: "GET",
