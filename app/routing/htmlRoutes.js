@@ -5,14 +5,14 @@ const path = require("path"),
 
 module.exports = function(app) {
 	app.get("/", (req, res) => {
-		res.sendFile(path.join(__dirname + "../public/home.html"));
+		res.sendFile(path.join(__dirname, "../public/home.html"));
 	});
 
 	app.get("/reserve", (req, res) => {
-		res.sendFile(path.join(__dirname + "../public/reservation.html"));
+		res.sendFile(path.join(__dirname, "../public/reservation.html"));
 	});
 
 	app.get("/table", (req, res) => {
-		res.sendFile(path.join(__dirname + "../public/tables.html"));
+		res.sendFile(path.join(__dirname, "../public/tables.html"));
 	});
 }
