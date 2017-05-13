@@ -46,33 +46,6 @@
             <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
         </footer>
     </div>
-    <script>
-    $(document).ready(function() {
-        console.log("ready!");
-        //get from api
-        $.ajax({
-            url: "http://localhost:3000/api/tables",
-            METHOD: "GET"
-        }).done(function(res) {
-            for (var i = 0; i < res.length; i++) {
-                $(".reservations").append("<div class= \"reservationList\">" + "<button class=\"btn btn-primary\">" + i + "</button>" + "<p>" + res[i].name + "</p>" + "</div>");
-            }
-        });
-
-        $.ajax({
-            url: "http://localhost:3000/api/waitlist",
-            METHOD: "GET"
-        }).done(function(res) {
-            for (var i = 0; i < res.length; i++) {
-
-                $(".waitlist").append("<div class= \"waitList\">" + "<button class=\"btn btn-primary\">" + i + "</button>" + "<p>" + res[i].name + "</p>" + "</div>");
-            }
-        });
-
-
-
-    });
-    </script>
 </body>
-
+<script src="../javascript/ajaxCalls.js"></script>
 </html>

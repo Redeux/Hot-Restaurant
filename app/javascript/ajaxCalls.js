@@ -14,7 +14,7 @@ function getTables() {
   });
 }
 
-function getTables() {
+function getWaitList() {
 
   $.ajax({
     method: "GET",
@@ -29,15 +29,30 @@ function getTables() {
   });
 }
 
-function getTables(postData) {
+function postTables(postData) {
 
   $.ajax({
     method: "POST",
     url: "/api/waitlist",
-    data: postData
+    data: postData,
     dataType: "json"
   })
   .fail(function(error) {
     throw error;
+  });
+}
+
+function getTables() {
+
+  $.ajax({
+    method: "GET",
+    url: "/",
+    dataType: "html"
+  })
+  .done(function(data) {
+
+  })
+  .fail(function(error) {
+
   });
 }

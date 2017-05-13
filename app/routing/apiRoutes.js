@@ -1,9 +1,4 @@
 "use strict";
-
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 var tablesArray = require("./../data/tables.json");
 
 module.exports = function(app) {
