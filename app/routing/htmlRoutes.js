@@ -8,7 +8,7 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, "../public/home.html"));
 	});
 
-	app.get("/reserve", (req, res) => {
+	app.get("/reservation", (req, res) => {
 		res.sendFile(path.join(__dirname, "../public/reservation.html"));
 	});
 
