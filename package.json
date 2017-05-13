@@ -1,0 +1,26 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "For UNC Coding Bootcamp 2017",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redeux/Hot-Restaurant.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Redeux/Hot-Restaurant/issues"
+  },
+  "homepage": "https://github.com/Redeux/Hot-Restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
