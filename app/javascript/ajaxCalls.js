@@ -35,7 +35,7 @@ function getWaitlist(callback) {
 
   $.ajax({
     method: "GET",
-    url: "/",
+    url: "/api/waitlist",
     dataType: "html"
   })
   .done(function(data) {
