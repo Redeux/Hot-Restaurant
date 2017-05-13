@@ -1,18 +1,4 @@
 "use strict"
-function getTables(callBack) {
-
-  $.ajax({
-    method: "GET",
-    url: "/api/tables",
-    dataType: "json"
-  })
-  .done(function(data) {
-    callback(data)
-  })
-  .fail(function(error) {
-    callback(error);
-  });
-}
 
 function getTables(callback) {
 
