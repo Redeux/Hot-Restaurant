@@ -1,6 +1,5 @@
 "use strict";
 
-
 var tablesArray = require("./../data/tables.json");
 
 module.exports = function(app) {
@@ -13,7 +12,6 @@ module.exports = function(app) {
         console.log(tables);
         res.json(tables);
     });
-
 
     app.get("/api/waitlist", function(req, res) {
         var waitList = [];
@@ -37,5 +35,4 @@ module.exports = function(app) {
         // We then display the JSON to the users
         res.json(newTable);
     });
-
 }
