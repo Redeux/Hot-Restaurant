@@ -39,9 +39,9 @@ function getWaitlist(callback) {
     dataType: "html"
   })
   .done(function(data) {
-    callback();
+    callback(data);
   })
   .fail(function(error) {
-    callback();
+    callback(error);
   });
 }
