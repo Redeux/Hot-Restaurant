@@ -16,7 +16,7 @@ module.exports = function(app) {
     app.get("/api/waitlist", function(req, res) {
         var waitList = [];
         for (var i = 5; i < tablesArray.length; i++) {
-            waitList.push(tablesArray[i]);
+           if (!null) waitList.push(tablesArray[i]);
         }
         console.log(waitList);
         res.json(waitList);
