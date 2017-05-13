@@ -11,7 +11,7 @@ function getTables(callback) {
     callback(data)
   })
   .fail(function(error) {
-    callback(data)
+    callback(error)
   });
 }
 
