@@ -1,5 +1,5 @@
 "use strict"
-function getTables() {
+function getTables(callBack) {
 
   $.ajax({
     method: "GET",
@@ -7,14 +7,14 @@ function getTables() {
     dataType: "json"
   })
   .done(function(data) {
-
+    callback(data)
   })
   .fail(function(error) {
-
+    callback(error);
   });
 }
 
-function getWaitList() {
+function getWaitList(callback) {
 
   $.ajax({
     method: "GET",
@@ -22,14 +22,14 @@ function getWaitList() {
     dataType: "json"
   })
   .done(function(data) {
-
+    callback(data)
   })
   .fail(function(error) {
-
+    callback(data)
   });
 }
 
-function postTables(postData) {
+function postTables(postData,callback) {
 
   $.ajax({
     method: "POST",
@@ -37,12 +37,15 @@ function postTables(postData) {
     data: postData,
     dataType: "json"
   })
+  .done(function(data){
+    callback(data)
+  })
   .fail(function(error) {
-    throw error;
+    callback(error);
   });
 }
 
-function getTables() {
+function getTables(callback) {
 
   $.ajax({
     method: "GET",
@@ -50,9 +53,9 @@ function getTables() {
     dataType: "html"
   })
   .done(function(data) {
-
+    callback();
   })
   .fail(function(error) {
-
+    callback();
   });
 }
