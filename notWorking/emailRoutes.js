@@ -27,4 +27,3 @@ const nodemailer = require('nodemailer');
         }
         console.log('Message %s sent: %s', info.messageId, info.response);
     });
-
